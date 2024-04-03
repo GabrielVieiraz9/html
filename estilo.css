@@ -1,0 +1,89 @@
+body {
+    background-color: black;
+}
+p {
+    color:rgb(43, 226, 165);
+    text-align: center;
+}
+#para1{
+    text-align: left;
+    color: blueviolet;
+}
+.center{
+    text-align: center;
+    color:brown;
+}
+p.center{
+    text-align: center;
+    color:red;
+    border: 3px solid green;
+}
+.right{
+    position: absolute;
+    right: 0px;
+    width: 300px;
+    border: 3px solid #FFF;
+    padding: 10px;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: chartreuse;
+}
+li a{
+    display: block;
+    color: blue;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+}
+li a:hover{
+    background-color: #555;
+    color:white;
+}
+h1{
+    color:red;
+}
+h4{
+    color:white;
+    text-align: center;
+    text-transform: uppercase;
+    border: 3px solid red;
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+table {
+    color: red;
+    border-color: #FFF;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid #FFF;
+    border-collapse: collapse;
+}
+td {
+    padding: 4.5px;
+    text-align: center;
+    vertical-align: middle;
+    text-align: center;
+    width: auto;
+    border: 2px solid #FFF;
+}
+td:hover {
+    background-color: #555;
+    color: white;
+    transition: background-color 0.6s ease;
+}
+img{
+    border: 3px solid rgb(255, 255, 255);
+}
+a {
+    color: red;
+    transition: color 0.3s ease;
+    vertical-align: middle;
+}
+a:hover {
+    color: #ffb2b2;
+}

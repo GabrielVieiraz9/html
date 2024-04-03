@@ -69,6 +69,7 @@ td {
     vertical-align: middle;
     text-align: center;
     width: auto;
+    border: 2px solid #FFF;
 }
 td:hover {
     background-color: #555;

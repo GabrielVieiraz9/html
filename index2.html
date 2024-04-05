@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Defqon.1 2024 lineup</title>
+    <link rel="stylesheet" type="text/css" href="./estilo.css">
+</head>
+<body>
+
+    <div class="stage-container">
+        <img src="blue_stage.jpg" alt="Stage" width="400" height="150">
+
+        <div class="days-container">
+            <div class="day-container">
+                <h4>Thursday</h4>
+                
+                <table border="1">    
+                    <tr>
+                        <td>Act of Rage</td>
+                        <td>B-Front X Phuture Noize: The Enlightenment</td>
+                        <td>Brennan Heart</td>
+                        <td>Hard Driver</td>
+                        <td>Sound Rush</td>
+
+                    </tr>
+                </table>
+            </div>
+            <div class="day-container">
+                <h4>Friday</h4>
+
+                <table border="1">    
+                    <tr>
+                        <td>Aversion</td>
+                        <td>Cryex Presents Band of Color</td>
+                        <td>Digital Punk Presents Cyber Punk</td>
+                        <td>E-Force Live</td>
+                        <td>Gunz For Hire</td>
+                        <td>Killshot</td>
+                        <td>Kronos Presents: Kryptonite 2.0</td>
+                    </tr>
+                    <tr>
+                        <td>Malice Presents: My Therapy</td>
+                        <td>Omnya & Sanctuary</td>
+                        <td>Resolute</td>
+                        <td>Rvage</td>
+                        <td>Sickmode</td>
+                        <td>Unresolved: Bad Blood Live</td>
+                        <td>Voidax</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="day-container">
+                <h4>Saturday</h4>
+                <table border="1">    
+                    <tr>
+                        <td>Adjuzt</td>
+                        <td>Aftershock</td>
+                        <td>Anderex</td>
+                        <td>Chapter V</td>
+                        <td>Code Black</td>
+
+                    </tr>
+                    <tr>
+                        <td>Dual Damage</td>
+                        <td>Level One</td>
+                        <td>Riot Shift</td>
+                        <td>Scarra Vasto Present Bassline Breaker</td>
+                        <td>The Purge Presents Beyond Trippin</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="day-container">
+                <h4>Sunday</h4>
+                <table border="1">    
+                    <tr>
+                        <td>Adaro</td>
+                        <td>Bloodlust</td>
+                        <td>Boray</td>
+                        <td>Cryex Kenai Vexxed</td>
+                        <td>Crypsis</td>
+                        <td>Imperatorz</td>
+
+                    </tr>
+                    <tr>
+                        <td>Invector</td>
+                        <td>Mish</td>
+                        <td>Radianze</td>
+                        <td>Rebelion & Aversion</td>
+                        <td>Sickmode & Krowdexx</td>
+                        <td>Spoontechnicians</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="link" style="text-align: right;">
+        <a href="form.html">Link to Defqon.1 Form >>></a>
+    </div>
+
+    <button onclick="loadIndex1Content()">Red Stage</button>
+
+    <script>
+        function changeText() {
+            var tdElements = document.querySelectorAll('.stage-container td');
+
+            tdElements.forEach(function(element) {
+                var words = element.textContent.split(' ');
+                var pascalCaseText = '';
+
+                words.forEach(function(word) {
+                    pascalCaseText += word.charAt(0).toUpperCase() + word.slice(1);
+                });
+
+                element.textContent = pascalCaseText;
+            });
+        }
+    </script>
+
+</body>
+</html>

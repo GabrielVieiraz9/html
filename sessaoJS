@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sessão JavaScript</title>
+    <script type="text/javascript">
+        window.onload  = function () {
+            alert("Estamos criando um alerta");
+        }
+    </script>
+    <script src="./scriptJava.js" type="text/javascript"></script>
+</head>
+<body>
+    <h2>Vamos começar com o JavaScript!!!</h2>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+ 
+    <script>
+        document.getElementById("demo").innerHTML = "Meu primeiro Script";
+
+        let x = 16 + " Fiat - Uno Mille";
+        document.getElementById("demo2").innerHTML = x;
+
+        function minhaFuncao(p1,p2){
+            return p1 * p2;
+        }
+
+        let resultado = minhaFuncao(5, 10);
+        document.getElementById("demo").innerHTML = resultado;
+
+    </script>
+    <button type="button" onclick='document.getElementById("demo").innerHTML = "Olá Mundo JavaScript"'>Clique Aqui</button>
+    
+    <script>
+       //criando um objeto
+       const pessoa = {
+        primeiroNome: "Gabriel",
+        ultimoNome: "Vieira",
+        idade: 26,
+        corDosOlos: "castanho",
+        nomeCompleto: function(){
+            return this.primeiroNome + " " + this.ultimoNome;
+        }
+       };
+
+       document.getElementById("demo").innerHTML = pessoa.nomeCompleto() + " tem "+ pessoa.idade +" anos de vida...";
+    </script>
+    <button type="button" onclick='document.getElementById("demo").innerHTML = Date()'>A data é: </button>
+
+</body>
+</html>

@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Defqon.1 2024 lineup</title>
-
+    <script type="text/javascript" src="./scriptJava.js"></script>
     <link rel="stylesheet" type="text/css" href="./estilo.css">
 </head>
 <body>
-    <div align = "center">
-        <h1>Defqon.1</h1>
-        <img src="defqon.jpg" alt="Descrição da imagem" width="500">
-    </div>
-    <h3>Red Stage</h3>
+
+    <div class="content">
+    <div class ="stage-container">
+        <img src="red_stage.jpg" alt="Stage" width="400" height="150">
+
+    <div class ="days-container">
+        <div class ="day-container">
     <h4>Friday</h4>
 
     <table border="1">    
@@ -34,9 +35,8 @@
             <td>Hosted by Villain & DV8</td>
         </tr>
     </table>
-<br>
-<br>
-<br>
+        </div>
+        <div class ="day-container">
     <h4>Saturday</h4>
     <table border="1">    
         <tr>
@@ -56,9 +56,8 @@
             <td>Hosted by Villain & DV8</td>
         </tr>
     </table>
-    <br>
-    <br>
-    <br>
+    </div>
+    <div class ="day-container">
     <h4>Sunday</h4>
     <table border="1">    
         <tr>
@@ -71,13 +70,18 @@
             <td>Hosted by Villain & DV8</td>
         </tr>
     </table>
-    <br>
-    <br>
-    <br>
+    </div>
+    </div>
+</div>
 
-    <div style="text-align: right;">
+    <div class="link" style="text-align: right;">
         <a href="form.html">Link to Defqon.1 Form >>></a>
     </div>
+
+<script src="./scriptJava.js"></script>
+
+<button onclick="loadIndex2Content()">Blue Stage</button>
+
 
 </body>
 </html>
